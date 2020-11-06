@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_MATERIAL_TEXT_PARA_CUT1</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Test double class for Material Text</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+    <WITH_UNIT_TESTS>X</WITH_UNIT_TESTS>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_MATERIAL_TEXT_PARA_CUT1</CLSNAME>
+     <CMPNAME>GD_DOA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Material Text</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_MATERIAL_TEXT_PARA_CUT1</CLSNAME>
+     <CMPNAME>GET_MATERIAL_TEXT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get material Text</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

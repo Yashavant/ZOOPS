@@ -1,0 +1,3571 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ECAT" serializer_version="v1.0.0">
+ <VERSIONS>
+  <VERSION>
+   <ECSC VERSION="1.5">
+    <ATTRIBUTES>
+     <ETTOOLNAME>ECATT</ETTOOLNAME>
+     <ETOBJ_GNDT>
+      <VERSION>00000001</VERSION>
+      <TWB_TITLE>Po</TWB_TITLE>
+      <SOFTCOMP/>
+      <TWB_DEP_RF/>
+      <TWB_DEP_RT/>
+      <TWB_STATUS>X</TWB_STATUS>
+      <TWB_RELE>N</TWB_RELE>
+      <FUSER></FUSER>
+      <FDATE></FDATE>
+      <LUSER></LUSER>
+      <LDATE></LDATE>
+      <LTIME></LTIME>
+      <REL_BAS_F/>
+      <REL_BAS_T/>
+      <SERVICE/>
+      <PVNR/>
+      <BACKUP/>
+     </ETOBJ_GNDT>
+     <ETOBJNOVER>
+      <NAME>ZPO</NAME>
+      <TYPE>ECSC</TYPE>
+      <TWB_RESP></TWB_RESP>
+      <TWB_DISTL>B</TWB_DISTL>
+      <TWB_EUBOBJ/>
+      <TWB_EUTYPE/>
+      <DEVCLASS></DEVCLASS>
+      <MASTERLANG>E</MASTERLANG>
+      <TADIR_RESP></TADIR_RESP>
+      <FRANGE>BC</FRANGE>
+      <BCSET_MODE/>
+      <API_MODE/>
+      <COL_TSTOBJDATA/>
+      <NO_TRANSLATION/>
+     </ETOBJNOVER>
+     <ETOBJ_DOC>
+      <SEARCH_1/>
+      <SEARCH_2/>
+      <SEARCH_3/>
+      <SEARCH_4/>
+      <SEARCH_5/>
+      <SEARCH_6/>
+      <SEARCH_7/>
+      <SEARCH_8/>
+      <SEARCH_9/>
+      <SEARCH_10/>
+      <S_DOC_ID/>
+      <S_OBJ_ID/>
+      <S_DOC_TITL/>
+     </ETOBJ_DOC>
+     <ETOBJ_CNST>
+      <TWB_DEP_S/>
+      <TWB_DEPV_S/>
+      <TWB_DEP_L/>
+      <TWB_DEPV_L/>
+      <TWB_USE_A/>
+      <TWB_USE_P/>
+      <TWB_USE_H/>
+      <TWB_USE_E/>
+      <REUSE/>
+      <TWB_DEP_C/>
+      <TWB_DEP_VC/>
+      <TWB_DEP_F/>
+      <TWB_DEP_VF/>
+      <TWB_DEP_P/>
+      <TWB_DEP_VP/>
+      <TWB_DEP_DB/>
+      <TWB_DEPVDB/>
+      <TWB_WKREQ>0.0</TWB_WKREQ>
+      <TWB_WKUNIT>MIN</TWB_WKUNIT>
+      <TWB_PRIO>3</TWB_PRIO>
+     </ETOBJ_CNST>
+     <ETSC_TSYS>
+      <SYSTEMDATA/>
+      <TESTSYSTEM/>
+     </ETSC_TSYS>
+     <ETSYS_COMP_TABTYPE/>
+     <ETSYS_REL_TABTYPE/>
+     <ETBF_OBJ_TABTYPE/>
+     <ETBF_VER_TABTYPE/>
+     <ETSCR_SUT_MD_TT/>
+    </ATTRIBUTES>
+    <SCRIPT>
+     <ETXML_LINE_TABTYPE>
+      <item>TCD ( ME21N , ME21N_1 ).</item>
+     </ETXML_LINE_TABTYPE>
+    </SCRIPT>
+    <PARAMETERS>
+     <ETPAR_GUIX>
+      <item>
+       <PNAME>ME21N_1</PNAME>
+       <PTYP>X</PTYP>
+       <PDESC>Overall Structure of a Transaction</PDESC>
+       <PINDEX>0001</PINDEX>
+       <PGROUP>TCD</PGROUP>
+       <XMLREF_TYP>B</XMLREF_TYP>
+       <PSTRUC_TYP>T</PSTRUC_TYP>
+       <PREF_NAME>ETTCD</PREF_NAME>
+       <PDATLEN>0000</PDATLEN>
+       <PINTLEN>000000</PINTLEN>
+       <PDECIMALS>000000</PDECIMALS>
+       <SORT_LNR>0001</SORT_LNR>
+       <PREF_NAME2>ETTCD</PREF_NAME2>
+       <VALUE>&lt;VALUE&gt;</VALUE>
+       <VAL_TYPE>T</VAL_TYPE>
+       <TAB_INDEX>0</TAB_INDEX>
+       <DEEP_STRU>
+        <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://xml.sap.com/2003/05/eCATT/ddic" version="1.0">
+         <xsd:complexType name="ETTCD">
+          <annotation>
+           <documentation>I==O==C=S=K==D=ETTCD=A=v=L=000000=doc=Overall Structure of a Transaction</documentation>
+          </annotation>
+          <sequence>
+           <element name="TCODE" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BDC_TCODE=A=C=L=000020=doc=BDC Transaction cod</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="20"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="MODE" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=ETTCD_MODE=A=C=L=000001=doc=Replay Mode (A=Fgr</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="BINPT" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=ETTCD_BINP=A=C=L=000001=doc=Batch Input Mode (</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="WAIT" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=ETTCD_WAIT=A=N=L=000004=doc=Wait Time Factor (</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <pattern value="\d+"/>
+              <maxLength value="4"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DYNPRO" minOccurs="0" type="ETTCD_DYN_TABTYPE"/>
+           <element name="MSG" minOccurs="0" type="ETTCD_MSG_TABTYPE"/>
+          </sequence>
+         </xsd:complexType>
+         <xsd:complexType name="ETTCD_DYN_TABTYPE">
+          <annotation>
+           <documentation>I==O==C=T=K==D=ETTCD_DYN_TABTYPE=A=h=L=000000=doc=Screen Tab</documentation>
+          </annotation>
+          <sequence>
+           <element name="item" type="ETTCD_DYN" minOccurs="0" maxOccurs="unbounded"/>
+          </sequence>
+         </xsd:complexType>
+         <xsd:complexType name="ETTCD_MSG_TABTYPE">
+          <annotation>
+           <documentation>I==O==C=T=K==D=ETTCD_MSG_TABTYPE=A=h=L=000000=doc=Message Ta</documentation>
+          </annotation>
+          <sequence>
+           <element name="item" type="BDCMSGCOLL" minOccurs="0" maxOccurs="unbounded"/>
+          </sequence>
+         </xsd:complexType>
+         <xsd:complexType name="ETTCD_DYN">
+          <annotation>
+           <documentation>I==O==C=S=K==D=ETTCD_DYN=A=v=L=000000=doc=Screen Structure i</documentation>
+          </annotation>
+          <sequence>
+           <element name="MODE" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=ETDYN_MODE=A=C=L=000001=doc=Dynpro Editing Mod</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="PROG" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BDC_PROG=A=C=L=000040=doc=BDC module pool</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="40"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DYNR" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BDC_DYNR=A=N=L=000004=doc=BDC Dynpro Number</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <pattern value="\d+"/>
+              <maxLength value="4"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="FIELD" minOccurs="0" type="ETTCD_FLD_TABTYPE"/>
+          </sequence>
+         </xsd:complexType>
+         <xsd:complexType name="BDCMSGCOLL">
+          <annotation>
+           <documentation>I==O==C=S=K==D=BDCMSGCOLL=A=u=L=000000=doc=Collecting messag</documentation>
+          </annotation>
+          <sequence>
+           <element name="TCODE" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BDC_TCODE=A=C=L=000020=doc=BDC Transaction cod</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="20"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DYNAME" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BDC_MODULE=A=C=L=000040=doc=Batch input module</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="40"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DYNUMB" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BDC_DYNNR=A=C=L=000004=doc=Batch input screen</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="4"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="MSGTYP" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BDC_MART=A=C=L=000001=doc=Batch input message</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="MSGSPRA" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BDC_SPRAS=A=C=L=000001=doc=Language ID of a me</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="MSGID" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BDC_MID=A=C=L=000020=doc=Batch input message I</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="20"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="MSGNR" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BDC_MNR=A=C=L=000003=doc=Batch input message n</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="3"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="MSGV1" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BDC_VTEXT1=A=C=L=000100=doc=Variable part of a</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="100"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="MSGV2" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BDC_VTEXT1=A=C=L=000100=doc=Variable part of a</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="100"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="MSGV3" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BDC_VTEXT1=A=C=L=000100=doc=Variable part of a</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="100"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="MSGV4" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BDC_VTEXT1=A=C=L=000100=doc=Variable part of a</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="100"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="ENV" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BDC_AKT=A=C=L=000004=doc=Batch input monitorin</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="4"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="FLDNAME" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=FNAM_____4=A=C=L=000132=doc=Field name</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="132"/>
+             </restriction>
+            </simpleType>
+           </element>
+          </sequence>
+         </xsd:complexType>
+         <xsd:complexType name="ETTCD_FLD_TABTYPE">
+          <annotation>
+           <documentation>I==O==C=T=K==D=ETTCD_FLD_TABTYPE=A=h=L=000000=doc=Field Tabl</documentation>
+          </annotation>
+          <sequence>
+           <element name="item" type="ETTCD_FLD" minOccurs="0" maxOccurs="unbounded"/>
+          </sequence>
+         </xsd:complexType>
+         <xsd:complexType name="ETTCD_FLD">
+          <annotation>
+           <documentation>I==O==C=S=K==D=ETTCD_FLD=A=u=L=000000=doc=Field Structure in</documentation>
+          </annotation>
+          <sequence>
+           <element name="MODE" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=ETFLD_MODE=A=C=L=000001=doc=Dynpro Field Mode</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="NAME" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=FNAM_____4=A=C=L=000132=doc=Field name</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="132"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="VALIN" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BDC_FVAL=A=C=L=000132=doc=BDC field value</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="132"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="VALOUT" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BDC_FVAL=A=C=L=000132=doc=BDC field value</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="132"/>
+             </restriction>
+            </simpleType>
+           </element>
+          </sequence>
+         </xsd:complexType>
+        </xsd:schema>
+       </DEEP_STRU>
+       <DEEP_DATA>
+        <ddic:ETTCD xmlns:ddic="http://xml.sap.com/2003/05/eCATT/ddic">
+         <TCODE>ME21N</TCODE>
+         <MODE/>
+         <BINPT/>
+         <WAIT/>
+         <DYNPRO>
+          <item>
+           <MODE>X</MODE>
+           <PROG>SAPLMEGUI</PROG>
+           <DYNR>0014</DYNR>
+           <FIELD>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_OKCODE</NAME>
+             <VALIN>/00</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               0013SUB0</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               0030SUB0</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               2000SUB0</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               1105SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_CURSOR</NAME>
+             <VALIN>MEPO_TOPLINE-SUPERFIELD</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO_TOPLINE-BSART</NAME>
+             <VALIN/>
+             <VALOUT>NB</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO_TOPLINE-EBELN</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>MEPO_TOPLINE-SCRTEXT</NAME>
+             <VALIN/>
+             <VALOUT>Vendor</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>MEPO_TOPLINE-SUPERFIELD</NAME>
+             <VALIN>1101</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO_TOPLINE-BEDAT</NAME>
+             <VALIN/>
+             <VALOUT>10.09.2020</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1100SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             4000SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_4000-BUTTON</NAME>
+             <VALIN/>
+             <VALOUT>@K2\QCollapse Item Details Ctrl+F7@</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1200SUB2</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             2000SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_2000-LABEL</NAME>
+             <VALIN/>
+             <VALOUT>Item Overview</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1100SUB2</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             4001SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_4000-BUTTON</NAME>
+             <VALIN/>
+             <VALOUT>@K2\QCollapse Item Details Ctrl+F7@</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1200SUB2</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             2000SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_2000-LABEL</NAME>
+             <VALIN/>
+             <VALOUT>Item Overview</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1100SUB3</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             4002SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_4000-BUTTON</NAME>
+             <VALIN/>
+             <VALOUT>@K2\QCollapse Item Details Ctrl+F7@</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1200SUB2</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               1301SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               6000SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>DYN_6000-LIST</NAME>
+             <VALIN/>
+             <VALOUT>   1</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1000SUB2</VALIN>
+             <VALOUT/>
+            </item>
+           </FIELD>
+          </item>
+          <item>
+           <MODE>X</MODE>
+           <PROG>SAPLMEGUI</PROG>
+           <DYNR>0014</DYNR>
+           <FIELD>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_OKCODE</NAME>
+             <VALIN>/00</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               0013SUB0</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               0030SUB0</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               2000SUB0</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               1105SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO_TOPLINE-BSART</NAME>
+             <VALIN/>
+             <VALOUT>NB</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO_TOPLINE-EBELN</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>MEPO_TOPLINE-SCRTEXT</NAME>
+             <VALIN/>
+             <VALOUT>Vendor</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO_TOPLINE-SUPERFIELD</NAME>
+             <VALIN/>
+             <VALOUT>1101 Test Vendor</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO_TOPLINE-BEDAT</NAME>
+             <VALIN/>
+             <VALOUT>10.09.2020</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>MEPO_TOPLINE-STATUSICON</NAME>
+             <VALIN/>
+             <VALOUT>@5C\QDoc. Header Messages (Error)@</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1100SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             4000SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_4000-BUTTON</NAME>
+             <VALIN/>
+             <VALOUT>@K2\QCollapse Item Details Ctrl+F7@</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1200SUB2</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               1102SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP1</NAME>
+             <VALIN/>
+             <VALOUT>Delivery/Invoice</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP2</NAME>
+             <VALIN/>
+             <VALOUT>Conditions</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP3</NAME>
+             <VALIN/>
+             <VALOUT>Texts</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP4</NAME>
+             <VALIN/>
+             <VALOUT>Address</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP5</NAME>
+             <VALIN/>
+             <VALOUT>Communication</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP6</NAME>
+             <VALIN/>
+             <VALOUT>Partners</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP7</NAME>
+             <VALIN/>
+             <VALOUT>Additional Data</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP8</NAME>
+             <VALIN/>
+             <VALOUT>Org. Data</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP9</NAME>
+             <VALIN/>
+             <VALOUT>Status</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP11</NAME>
+             <VALIN/>
+             <VALOUT>Incoterms</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               1221TABSTRIPCONTROL2SUB</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_CURSOR</NAME>
+             <VALIN>MEPO1222-BUKRS</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>MEPO1222-EKORG</NAME>
+             <VALIN>US01</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>MEPO1222-EKGRP</NAME>
+             <VALIN>US1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>MEPO1222-BUKRS</NAME>
+             <VALIN>US03</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1100SUB2</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             4001SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_4000-BUTTON</NAME>
+             <VALIN/>
+             <VALOUT>@K2\QCollapse Item Details Ctrl+F7@</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1200SUB2</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             2000SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_2000-LABEL</NAME>
+             <VALIN/>
+             <VALOUT>Item Overview</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1100SUB3</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             4002SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_4000-BUTTON</NAME>
+             <VALIN/>
+             <VALOUT>@K2\QCollapse Item Details Ctrl+F7@</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1200SUB2</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               1301SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               6000SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>DYN_6000-LIST</NAME>
+             <VALIN/>
+             <VALOUT>   1</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1000SUB2</VALIN>
+             <VALOUT/>
+            </item>
+           </FIELD>
+          </item>
+          <item>
+           <MODE>X</MODE>
+           <PROG>SAPLMEGUI</PROG>
+           <DYNR>0014</DYNR>
+           <FIELD>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_OKCODE</NAME>
+             <VALIN>=MEV4001BUTTON</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               0013SUB0</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               0030SUB0</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               2000SUB0</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               1105SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO_TOPLINE-BSART</NAME>
+             <VALIN/>
+             <VALOUT>NB</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO_TOPLINE-EBELN</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>MEPO_TOPLINE-SCRTEXT</NAME>
+             <VALIN/>
+             <VALOUT>Vendor</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO_TOPLINE-SUPERFIELD</NAME>
+             <VALIN/>
+             <VALOUT>1101 Test Vendor</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO_TOPLINE-BEDAT</NAME>
+             <VALIN/>
+             <VALOUT>10.09.2020</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1100SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             4000SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_4000-BUTTON</NAME>
+             <VALIN/>
+             <VALOUT>@K2\QCollapse Item Details Ctrl+F7@</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1200SUB2</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               1102SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP1</NAME>
+             <VALIN/>
+             <VALOUT>Delivery/Invoice</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP2</NAME>
+             <VALIN/>
+             <VALOUT>Conditions</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP3</NAME>
+             <VALIN/>
+             <VALOUT>Texts</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP4</NAME>
+             <VALIN/>
+             <VALOUT>Address</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP5</NAME>
+             <VALIN/>
+             <VALOUT>Communication</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP6</NAME>
+             <VALIN/>
+             <VALOUT>Partners</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP7</NAME>
+             <VALIN/>
+             <VALOUT>Additional Data</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP8</NAME>
+             <VALIN/>
+             <VALOUT>Org. Data</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP9</NAME>
+             <VALIN/>
+             <VALOUT>Status</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP11</NAME>
+             <VALIN/>
+             <VALOUT>Incoterms</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               1221TABSTRIPCONTROL2SUB</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_CURSOR</NAME>
+             <VALIN>MEPO1222-BUKRS</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1222-EKORG</NAME>
+             <VALIN/>
+             <VALOUT>US01</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>MEPO1222-EKOTX</NAME>
+             <VALIN/>
+             <VALOUT>US Purchase Org</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1222-EKGRP</NAME>
+             <VALIN/>
+             <VALOUT>US1</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>MEPO1222-EKNAM</NAME>
+             <VALIN/>
+             <VALOUT>US PurchasingGroup</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1222-BUKRS</NAME>
+             <VALIN/>
+             <VALOUT>US03</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>MEPO1222-BUTXT</NAME>
+             <VALIN/>
+             <VALOUT>US Test Company</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1100SUB2</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             4001SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_4000-BUTTON</NAME>
+             <VALIN/>
+             <VALOUT>@K2\QCollapse Item Details Ctrl+F7@</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1200SUB2</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             2000SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_2000-LABEL</NAME>
+             <VALIN/>
+             <VALOUT>Item Overview</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1100SUB3</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             4002SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_4000-BUTTON</NAME>
+             <VALIN/>
+             <VALOUT>@K2\QCollapse Item Details Ctrl+F7@</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1200SUB2</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               1301SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               6000SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>DYN_6000-LIST</NAME>
+             <VALIN/>
+             <VALOUT>   1</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1000SUB2</VALIN>
+             <VALOUT/>
+            </item>
+           </FIELD>
+          </item>
+          <item>
+           <MODE>X</MODE>
+           <PROG>SAPLMEGUI</PROG>
+           <DYNR>0014</DYNR>
+           <FIELD>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_OKCODE</NAME>
+             <VALIN>/00</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               0013SUB0</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               0030SUB0</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               2000SUB0</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               1105SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO_TOPLINE-BSART</NAME>
+             <VALIN/>
+             <VALOUT>NB</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO_TOPLINE-EBELN</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>MEPO_TOPLINE-SCRTEXT</NAME>
+             <VALIN/>
+             <VALOUT>Vendor</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO_TOPLINE-SUPERFIELD</NAME>
+             <VALIN/>
+             <VALOUT>1101 Test Vendor</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO_TOPLINE-BEDAT</NAME>
+             <VALIN/>
+             <VALOUT>10.09.2020</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1100SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             4000SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_4000-BUTTON</NAME>
+             <VALIN/>
+             <VALOUT>@K2\QCollapse Item Details Ctrl+F7@</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1200SUB2</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               1102SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP1</NAME>
+             <VALIN/>
+             <VALOUT>Delivery/Invoice</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP2</NAME>
+             <VALIN/>
+             <VALOUT>Conditions</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP3</NAME>
+             <VALIN/>
+             <VALOUT>Texts</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP4</NAME>
+             <VALIN/>
+             <VALOUT>Address</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP5</NAME>
+             <VALIN/>
+             <VALOUT>Communication</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP6</NAME>
+             <VALIN/>
+             <VALOUT>Partners</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP7</NAME>
+             <VALIN/>
+             <VALOUT>Additional Data</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP8</NAME>
+             <VALIN/>
+             <VALOUT>Org. Data</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP9</NAME>
+             <VALIN/>
+             <VALOUT>Status</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP11</NAME>
+             <VALIN/>
+             <VALOUT>Incoterms</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               1221TABSTRIPCONTROL2SUB</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1222-EKORG</NAME>
+             <VALIN/>
+             <VALOUT>US01</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>MEPO1222-EKOTX</NAME>
+             <VALIN/>
+             <VALOUT>US Purchase Org</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1222-EKGRP</NAME>
+             <VALIN/>
+             <VALOUT>US1</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>MEPO1222-EKNAM</NAME>
+             <VALIN/>
+             <VALOUT>US PurchasingGroup</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1222-BUKRS</NAME>
+             <VALIN/>
+             <VALOUT>US03</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>MEPO1222-BUTXT</NAME>
+             <VALIN/>
+             <VALOUT>US Test Company</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1100SUB2</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             4001SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_4000-BUTTON</NAME>
+             <VALIN/>
+             <VALOUT>@K2\QCollapse Item Details Ctrl+F7@</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1200SUB2</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               1211SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_CURSOR</NAME>
+             <VALIN>MEPO1211-MENGE(01)</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>/SAPMP/SCOPE</NAME>
+             <VALIN/>
+             <VALOUT>ALL</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>/SAPMP/MUEBS</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>MEPO1211-EMATN(01)</NAME>
+             <VALIN>NYTIMES-09</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>MEPO1211-MENGE(01)</NAME>
+             <VALIN>               10</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1100SUB3</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             4002SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_4000-BUTTON</NAME>
+             <VALIN/>
+             <VALOUT>@K2\QCollapse Item Details Ctrl+F7@</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1200SUB2</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               1301SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               6000SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>DYN_6000-LIST</NAME>
+             <VALIN/>
+             <VALOUT>   1</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1000SUB2</VALIN>
+             <VALOUT/>
+            </item>
+           </FIELD>
+          </item>
+          <item>
+           <MODE>X</MODE>
+           <PROG>SAPLMEGUI</PROG>
+           <DYNR>0014</DYNR>
+           <FIELD>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_OKCODE</NAME>
+             <VALIN>/00</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               0010SUB0</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               0030SUB0</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               2000SUB0</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               1105SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO_TOPLINE-BSART</NAME>
+             <VALIN/>
+             <VALOUT>NB</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO_TOPLINE-EBELN</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>MEPO_TOPLINE-SCRTEXT</NAME>
+             <VALIN/>
+             <VALOUT>Vendor</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO_TOPLINE-SUPERFIELD</NAME>
+             <VALIN/>
+             <VALOUT>1101 Test Vendor</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO_TOPLINE-BEDAT</NAME>
+             <VALIN/>
+             <VALOUT>10.09.2020</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1100SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             4000SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_4000-BUTTON</NAME>
+             <VALIN/>
+             <VALOUT>@K2\QCollapse Item Details Ctrl+F7@</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1200SUB2</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               1102SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP1</NAME>
+             <VALIN/>
+             <VALOUT>Delivery/Invoice</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP2</NAME>
+             <VALIN/>
+             <VALOUT>Conditions</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP3</NAME>
+             <VALIN/>
+             <VALOUT>Texts</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP4</NAME>
+             <VALIN/>
+             <VALOUT>Address</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP5</NAME>
+             <VALIN/>
+             <VALOUT>Communication</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP6</NAME>
+             <VALIN/>
+             <VALOUT>Partners</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP7</NAME>
+             <VALIN/>
+             <VALOUT>Additional Data</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP8</NAME>
+             <VALIN/>
+             <VALOUT>Org. Data</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP9</NAME>
+             <VALIN/>
+             <VALOUT>Status</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP11</NAME>
+             <VALIN/>
+             <VALOUT>Incoterms</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               1221TABSTRIPCONTROL2SUB</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1222-EKORG</NAME>
+             <VALIN/>
+             <VALOUT>US01</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>MEPO1222-EKOTX</NAME>
+             <VALIN/>
+             <VALOUT>US Purchase Org</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1222-EKGRP</NAME>
+             <VALIN/>
+             <VALOUT>US1</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>MEPO1222-EKNAM</NAME>
+             <VALIN/>
+             <VALOUT>US PurchasingGroup</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1222-BUKRS</NAME>
+             <VALIN/>
+             <VALOUT>US03</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>MEPO1222-BUTXT</NAME>
+             <VALIN/>
+             <VALOUT>US Test Company</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1100SUB2</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             4001SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_4000-BUTTON</NAME>
+             <VALIN/>
+             <VALOUT>@K2\QCollapse Item Details Ctrl+F7@</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1200SUB2</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               1211SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_CURSOR</NAME>
+             <VALIN>MEPO1211-NAME1(01)</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>/SAPMP/SCOPE</NAME>
+             <VALIN/>
+             <VALOUT>ALL</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>/SAPMP/MUEBS</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>MEPO1211-NAME1(01)</NAME>
+             <VALIN>CHI1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1100SUB3</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             4002SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_4000-BUTTON</NAME>
+             <VALIN/>
+             <VALOUT>@K2\QCollapse Item Details Ctrl+F7@</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1200SUB2</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               1301SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               6000SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>DYN_6000-LIST</NAME>
+             <VALIN/>
+             <VALOUT>   1</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               1303SUB2</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP4</NAME>
+             <VALIN/>
+             <VALOUT>Material Data</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP5</NAME>
+             <VALIN/>
+             <VALOUT>Quantities/Weights</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP6</NAME>
+             <VALIN/>
+             <VALOUT>Delivery Schedule</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP7</NAME>
+             <VALIN/>
+             <VALOUT>Delivery</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP8</NAME>
+             <VALIN/>
+             <VALOUT>Invoice</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP9</NAME>
+             <VALIN/>
+             <VALOUT>Conditions</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP16</NAME>
+             <VALIN/>
+             <VALOUT>Texts</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP17</NAME>
+             <VALIN/>
+             <VALOUT>Delivery Address</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP18</NAME>
+             <VALIN/>
+             <VALOUT>Confirmations</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP20</NAME>
+             <VALIN/>
+             <VALOUT>Condition Control</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP21</NAME>
+             <VALIN/>
+             <VALOUT>Retail</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP23</NAME>
+             <VALIN/>
+             <VALOUT>Spec2000 / SC</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP24</NAME>
+             <VALIN/>
+             <VALOUT>Incoterms</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1102TABSTRIPCONTROL1SUB</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               1319SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>MEPO1319-MATKL</NAME>
+             <VALIN/>
+             <VALOUT>L001</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1319-IUID_RELEVANT</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1319-REVLV</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1319-IDNLF</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1319-EAN11</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1319-LTSNR</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1319-CHARG</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1319-LICHA</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1319-SPINF</NAME>
+             <VALIN/>
+             <VALOUT>X</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>MEPO1319-PRODUCTTYPE</NAME>
+             <VALIN/>
+             <VALOUT>1</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>MEPO1319-PRODUCTTYPEDESCR</NAME>
+             <VALIN/>
+             <VALOUT>Material</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1000SUB2</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1000SUB3</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1000SUB4</VALIN>
+             <VALOUT/>
+            </item>
+           </FIELD>
+          </item>
+          <item>
+           <MODE>X</MODE>
+           <PROG>SAPLMEGUI</PROG>
+           <DYNR>0014</DYNR>
+           <FIELD>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_OKCODE</NAME>
+             <VALIN>/00</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               0010SUB0</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               0030SUB0</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               2000SUB0</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               1105SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO_TOPLINE-BSART</NAME>
+             <VALIN/>
+             <VALOUT>NB</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO_TOPLINE-EBELN</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>MEPO_TOPLINE-SCRTEXT</NAME>
+             <VALIN/>
+             <VALOUT>Vendor</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO_TOPLINE-SUPERFIELD</NAME>
+             <VALIN/>
+             <VALOUT>1101 Test Vendor</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO_TOPLINE-BEDAT</NAME>
+             <VALIN/>
+             <VALOUT>10.09.2020</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1100SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             4000SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_4000-BUTTON</NAME>
+             <VALIN/>
+             <VALOUT>@K2\QCollapse Item Details Ctrl+F7@</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1200SUB2</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               1102SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP1</NAME>
+             <VALIN/>
+             <VALOUT>Delivery/Invoice</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP2</NAME>
+             <VALIN/>
+             <VALOUT>Conditions</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP3</NAME>
+             <VALIN/>
+             <VALOUT>Texts</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP4</NAME>
+             <VALIN/>
+             <VALOUT>Address</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP5</NAME>
+             <VALIN/>
+             <VALOUT>Communication</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP6</NAME>
+             <VALIN/>
+             <VALOUT>Partners</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP7</NAME>
+             <VALIN/>
+             <VALOUT>Additional Data</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP8</NAME>
+             <VALIN/>
+             <VALOUT>Org. Data</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP9</NAME>
+             <VALIN/>
+             <VALOUT>Status</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP11</NAME>
+             <VALIN/>
+             <VALOUT>Incoterms</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               1221TABSTRIPCONTROL2SUB</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1222-EKORG</NAME>
+             <VALIN/>
+             <VALOUT>US01</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>MEPO1222-EKOTX</NAME>
+             <VALIN/>
+             <VALOUT>US Purchase Org</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1222-EKGRP</NAME>
+             <VALIN/>
+             <VALOUT>US1</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>MEPO1222-EKNAM</NAME>
+             <VALIN/>
+             <VALOUT>US PurchasingGroup</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1222-BUKRS</NAME>
+             <VALIN/>
+             <VALOUT>US03</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>MEPO1222-BUTXT</NAME>
+             <VALIN/>
+             <VALOUT>US Test Company</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1100SUB2</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             4001SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_4000-BUTTON</NAME>
+             <VALIN/>
+             <VALOUT>@K2\QCollapse Item Details Ctrl+F7@</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1200SUB2</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               1211SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_CURSOR</NAME>
+             <VALIN>MEPO1211-EEIND(01)</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>/SAPMP/SCOPE</NAME>
+             <VALIN/>
+             <VALOUT>ALL</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>/SAPMP/MUEBS</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1100SUB3</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             4002SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_4000-BUTTON</NAME>
+             <VALIN/>
+             <VALOUT>@K2\QCollapse Item Details Ctrl+F7@</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1200SUB2</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               1301SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               6000SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>DYN_6000-LIST</NAME>
+             <VALIN/>
+             <VALOUT>   1</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               1303SUB2</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP4</NAME>
+             <VALIN/>
+             <VALOUT>Material Data</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP5</NAME>
+             <VALIN/>
+             <VALOUT>Quantities/Weights</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP6</NAME>
+             <VALIN/>
+             <VALOUT>Delivery Schedule</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP7</NAME>
+             <VALIN/>
+             <VALOUT>Delivery</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP8</NAME>
+             <VALIN/>
+             <VALOUT>Invoice</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP9</NAME>
+             <VALIN/>
+             <VALOUT>Conditions</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP16</NAME>
+             <VALIN/>
+             <VALOUT>Texts</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP17</NAME>
+             <VALIN/>
+             <VALOUT>Delivery Address</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP18</NAME>
+             <VALIN/>
+             <VALOUT>Confirmations</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP20</NAME>
+             <VALIN/>
+             <VALOUT>Condition Control</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP21</NAME>
+             <VALIN/>
+             <VALOUT>Retail</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP23</NAME>
+             <VALIN/>
+             <VALOUT>Spec2000 / SC</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP24</NAME>
+             <VALIN/>
+             <VALOUT>Incoterms</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1102TABSTRIPCONTROL1SUB</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               1319SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>MEPO1319-MATKL</NAME>
+             <VALIN/>
+             <VALOUT>L001</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1319-IUID_RELEVANT</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1319-REVLV</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1319-IDNLF</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1319-EAN11</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1319-LTSNR</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1319-CHARG</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1319-LICHA</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1319-SPINF</NAME>
+             <VALIN/>
+             <VALOUT>X</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>MEPO1319-PRODUCTTYPE</NAME>
+             <VALIN/>
+             <VALOUT>1</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>MEPO1319-PRODUCTTYPEDESCR</NAME>
+             <VALIN/>
+             <VALOUT>Material</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1000SUB2</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1000SUB3</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1000SUB4</VALIN>
+             <VALOUT/>
+            </item>
+           </FIELD>
+          </item>
+          <item>
+           <MODE>X</MODE>
+           <PROG>SAPLMEGUI</PROG>
+           <DYNR>0014</DYNR>
+           <FIELD>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_OKCODE</NAME>
+             <VALIN>/00</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               0010SUB0</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               0030SUB0</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               2000SUB0</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               1105SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO_TOPLINE-BSART</NAME>
+             <VALIN/>
+             <VALOUT>NB</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO_TOPLINE-EBELN</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>MEPO_TOPLINE-SCRTEXT</NAME>
+             <VALIN/>
+             <VALOUT>Vendor</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO_TOPLINE-SUPERFIELD</NAME>
+             <VALIN/>
+             <VALOUT>1101 Test Vendor</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO_TOPLINE-BEDAT</NAME>
+             <VALIN/>
+             <VALOUT>10.09.2020</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1100SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             4000SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_4000-BUTTON</NAME>
+             <VALIN/>
+             <VALOUT>@K2\QCollapse Item Details Ctrl+F7@</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1200SUB2</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               1102SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP1</NAME>
+             <VALIN/>
+             <VALOUT>Delivery/Invoice</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP2</NAME>
+             <VALIN/>
+             <VALOUT>Conditions</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP3</NAME>
+             <VALIN/>
+             <VALOUT>Texts</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP4</NAME>
+             <VALIN/>
+             <VALOUT>Address</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP5</NAME>
+             <VALIN/>
+             <VALOUT>Communication</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP6</NAME>
+             <VALIN/>
+             <VALOUT>Partners</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP7</NAME>
+             <VALIN/>
+             <VALOUT>Additional Data</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP8</NAME>
+             <VALIN/>
+             <VALOUT>Org. Data</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP9</NAME>
+             <VALIN/>
+             <VALOUT>Status</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP11</NAME>
+             <VALIN/>
+             <VALOUT>Incoterms</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               1221TABSTRIPCONTROL2SUB</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1222-EKORG</NAME>
+             <VALIN/>
+             <VALOUT>US01</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>MEPO1222-EKOTX</NAME>
+             <VALIN/>
+             <VALOUT>US Purchase Org</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1222-EKGRP</NAME>
+             <VALIN/>
+             <VALOUT>US1</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>MEPO1222-EKNAM</NAME>
+             <VALIN/>
+             <VALOUT>US PurchasingGroup</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1222-BUKRS</NAME>
+             <VALIN/>
+             <VALOUT>US03</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>MEPO1222-BUTXT</NAME>
+             <VALIN/>
+             <VALOUT>US Test Company</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1100SUB2</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             4001SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_4000-BUTTON</NAME>
+             <VALIN/>
+             <VALOUT>@K2\QCollapse Item Details Ctrl+F7@</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1200SUB2</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               1211SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_CURSOR</NAME>
+             <VALIN>MEPO1211-EMATN(01)</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>/SAPMP/SCOPE</NAME>
+             <VALIN/>
+             <VALOUT>ALL</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>/SAPMP/MUEBS</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1100SUB3</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             4002SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_4000-BUTTON</NAME>
+             <VALIN/>
+             <VALOUT>@K2\QCollapse Item Details Ctrl+F7@</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1200SUB2</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               1301SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               6000SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>DYN_6000-LIST</NAME>
+             <VALIN/>
+             <VALOUT>   1</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               1303SUB2</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP4</NAME>
+             <VALIN/>
+             <VALOUT>Material Data</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP5</NAME>
+             <VALIN/>
+             <VALOUT>Quantities/Weights</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP6</NAME>
+             <VALIN/>
+             <VALOUT>Delivery Schedule</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP7</NAME>
+             <VALIN/>
+             <VALOUT>Delivery</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP8</NAME>
+             <VALIN/>
+             <VALOUT>Invoice</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP9</NAME>
+             <VALIN/>
+             <VALOUT>Conditions</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP16</NAME>
+             <VALIN/>
+             <VALOUT>Texts</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP17</NAME>
+             <VALIN/>
+             <VALOUT>Delivery Address</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP18</NAME>
+             <VALIN/>
+             <VALOUT>Confirmations</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP20</NAME>
+             <VALIN/>
+             <VALOUT>Condition Control</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP21</NAME>
+             <VALIN/>
+             <VALOUT>Retail</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP23</NAME>
+             <VALIN/>
+             <VALOUT>Spec2000 / SC</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP24</NAME>
+             <VALIN/>
+             <VALOUT>Incoterms</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1102TABSTRIPCONTROL1SUB</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               1319SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>MEPO1319-MATKL</NAME>
+             <VALIN/>
+             <VALOUT>L001</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1319-IUID_RELEVANT</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1319-REVLV</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1319-IDNLF</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1319-EAN11</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1319-LTSNR</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1319-CHARG</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1319-LICHA</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1319-SPINF</NAME>
+             <VALIN/>
+             <VALOUT>X</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>MEPO1319-PRODUCTTYPE</NAME>
+             <VALIN/>
+             <VALOUT>1</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>MEPO1319-PRODUCTTYPEDESCR</NAME>
+             <VALIN/>
+             <VALOUT>Material</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1000SUB2</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1000SUB3</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1000SUB4</VALIN>
+             <VALOUT/>
+            </item>
+           </FIELD>
+          </item>
+          <item>
+           <MODE>X</MODE>
+           <PROG>SAPLMEGUI</PROG>
+           <DYNR>0014</DYNR>
+           <FIELD>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_OKCODE</NAME>
+             <VALIN>=MESAVE</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               0010SUB0</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               0030SUB0</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               2000SUB0</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               1105SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO_TOPLINE-BSART</NAME>
+             <VALIN/>
+             <VALOUT>NB</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO_TOPLINE-EBELN</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>MEPO_TOPLINE-SCRTEXT</NAME>
+             <VALIN/>
+             <VALOUT>Vendor</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO_TOPLINE-SUPERFIELD</NAME>
+             <VALIN/>
+             <VALOUT>1101 Test Vendor</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO_TOPLINE-BEDAT</NAME>
+             <VALIN/>
+             <VALOUT>10.09.2020</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1100SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             4000SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_4000-BUTTON</NAME>
+             <VALIN/>
+             <VALOUT>@K2\QCollapse Item Details Ctrl+F7@</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1200SUB2</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               1102SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP1</NAME>
+             <VALIN/>
+             <VALOUT>Delivery/Invoice</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP2</NAME>
+             <VALIN/>
+             <VALOUT>Conditions</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP3</NAME>
+             <VALIN/>
+             <VALOUT>Texts</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP4</NAME>
+             <VALIN/>
+             <VALOUT>Address</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP5</NAME>
+             <VALIN/>
+             <VALOUT>Communication</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP6</NAME>
+             <VALIN/>
+             <VALOUT>Partners</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP7</NAME>
+             <VALIN/>
+             <VALOUT>Additional Data</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP8</NAME>
+             <VALIN/>
+             <VALOUT>Org. Data</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP9</NAME>
+             <VALIN/>
+             <VALOUT>Status</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1102-TABSTRIP11</NAME>
+             <VALIN/>
+             <VALOUT>Incoterms</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               1221TABSTRIPCONTROL2SUB</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1222-EKORG</NAME>
+             <VALIN/>
+             <VALOUT>US01</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>MEPO1222-EKOTX</NAME>
+             <VALIN/>
+             <VALOUT>US Purchase Org</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1222-EKGRP</NAME>
+             <VALIN/>
+             <VALOUT>US1</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>MEPO1222-EKNAM</NAME>
+             <VALIN/>
+             <VALOUT>US PurchasingGroup</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1222-BUKRS</NAME>
+             <VALIN/>
+             <VALOUT>US03</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>MEPO1222-BUTXT</NAME>
+             <VALIN/>
+             <VALOUT>US Test Company</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1100SUB2</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             4001SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_4000-BUTTON</NAME>
+             <VALIN/>
+             <VALOUT>@K2\QCollapse Item Details Ctrl+F7@</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1200SUB2</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               1211SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_CURSOR</NAME>
+             <VALIN>MEPO1211-EMATN(01)</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>/SAPMP/SCOPE</NAME>
+             <VALIN/>
+             <VALOUT>ALL</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>/SAPMP/MUEBS</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1100SUB3</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             4002SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_4000-BUTTON</NAME>
+             <VALIN/>
+             <VALOUT>@K2\QCollapse Item Details Ctrl+F7@</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1200SUB2</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               1301SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               6000SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>DYN_6000-LIST</NAME>
+             <VALIN/>
+             <VALOUT>   1</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               1303SUB2</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP4</NAME>
+             <VALIN/>
+             <VALOUT>Material Data</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP5</NAME>
+             <VALIN/>
+             <VALOUT>Quantities/Weights</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP6</NAME>
+             <VALIN/>
+             <VALOUT>Delivery Schedule</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP7</NAME>
+             <VALIN/>
+             <VALOUT>Delivery</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP8</NAME>
+             <VALIN/>
+             <VALOUT>Invoice</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP9</NAME>
+             <VALIN/>
+             <VALOUT>Conditions</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP16</NAME>
+             <VALIN/>
+             <VALOUT>Texts</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP17</NAME>
+             <VALIN/>
+             <VALOUT>Delivery Address</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP18</NAME>
+             <VALIN/>
+             <VALOUT>Confirmations</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP20</NAME>
+             <VALIN/>
+             <VALOUT>Condition Control</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP21</NAME>
+             <VALIN/>
+             <VALOUT>Retail</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP23</NAME>
+             <VALIN/>
+             <VALOUT>Spec2000 / SC</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>DYN_1302-TABSTRIP24</NAME>
+             <VALIN/>
+             <VALOUT>Incoterms</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1102TABSTRIPCONTROL1SUB</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEGUI                               1319SUB1</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>MEPO1319-MATKL</NAME>
+             <VALIN/>
+             <VALOUT>L001</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1319-IUID_RELEVANT</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1319-REVLV</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1319-IDNLF</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1319-EAN11</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1319-LTSNR</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1319-CHARG</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1319-LICHA</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>MEPO1319-SPINF</NAME>
+             <VALIN/>
+             <VALOUT>X</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>MEPO1319-PRODUCTTYPE</NAME>
+             <VALIN/>
+             <VALOUT>1</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>MEPO1319-PRODUCTTYPEDESCR</NAME>
+             <VALIN/>
+             <VALOUT>Material</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1000SUB2</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1000SUB3</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLMEVIEWS                             1000SUB4</VALIN>
+             <VALOUT/>
+            </item>
+           </FIELD>
+          </item>
+          <item>
+           <MODE>X</MODE>
+           <PROG>SAPMSCEM</PROG>
+           <DYNR>0001</DYNR>
+           <FIELD>
+            <item>
+             <MODE>O</MODE>
+             <NAME>LAST_MSG-ID</NAME>
+             <VALIN/>
+             <VALOUT>06</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>LAST_MSG-NUM</NAME>
+             <VALIN/>
+             <VALOUT>017</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>LAST_MSG-TEXT</NAME>
+             <VALIN/>
+             <VALOUT>&amp; created under the number &amp;</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>LAST_MSG-VAR1</NAME>
+             <VALIN/>
+             <VALOUT>Standard PO</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>LAST_MSG-VAR2</NAME>
+             <VALIN/>
+             <VALOUT>4500000279</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>LAST_MSG-VAR3</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>LAST_MSG-VAR4</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>LAST_MSG-ID1</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>LAST_MSG-NUM1</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>LAST_MSG-ID2</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>LAST_MSG-NUM2</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>LAST_MSG-ID3</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>LAST_MSG-NUM3</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+           </FIELD>
+          </item>
+         </DYNPRO>
+         <MSG>
+          <item>
+           <TCODE>ME21N</TCODE>
+           <DYNAME>SAPLMEGUI</DYNAME>
+           <DYNUMB>0014</DYNUMB>
+           <MSGTYP>S</MSGTYP>
+           <MSGSPRA>E</MSGSPRA>
+           <MSGID>ME</MSGID>
+           <MSGNR>083</MSGNR>
+           <MSGV1>Purchasing Org.</MSGV1>
+           <MSGV2/>
+           <MSGV3/>
+           <MSGV4/>
+           <ENV>CTU</ENV>
+           <FLDNAME>Enter Purchasing Org.</FLDNAME>
+          </item>
+          <item>
+           <TCODE>ME21N</TCODE>
+           <DYNAME>SAPLMEGUI</DYNAME>
+           <DYNUMB>0014</DYNUMB>
+           <MSGTYP>S</MSGTYP>
+           <MSGSPRA>E</MSGSPRA>
+           <MSGID>ME</MSGID>
+           <MSGNR>083</MSGNR>
+           <MSGV1>Plant</MSGV1>
+           <MSGV2/>
+           <MSGV3/>
+           <MSGV4/>
+           <ENV>CTU</ENV>
+           <FLDNAME>Enter Plant</FLDNAME>
+          </item>
+          <item>
+           <TCODE>ME21N</TCODE>
+           <DYNAME>SAPLMEGUI</DYNAME>
+           <DYNUMB>0014</DYNUMB>
+           <MSGTYP>S</MSGTYP>
+           <MSGSPRA>E</MSGSPRA>
+           <MSGID>ME</MSGID>
+           <MSGNR>040</MSGNR>
+           <MSGV1/>
+           <MSGV2/>
+           <MSGV3/>
+           <MSGV4/>
+           <ENV>CTU</ENV>
+           <FLDNAME>Can delivery date be met?</FLDNAME>
+          </item>
+          <item>
+           <TCODE>ME21N</TCODE>
+           <DYNAME>SAPLMEGUI</DYNAME>
+           <DYNUMB>0014</DYNUMB>
+           <MSGTYP>S</MSGTYP>
+           <MSGSPRA>E</MSGSPRA>
+           <MSGID>06</MSGID>
+           <MSGNR>587</MSGNR>
+           <MSGV1/>
+           <MSGV2/>
+           <MSGV3/>
+           <MSGV4/>
+           <ENV>CTU</ENV>
+           <FLDNAME>A centrally agreed contract exists for this material</FLDNAME>
+          </item>
+          <item>
+           <TCODE>ME21N</TCODE>
+           <DYNAME>SAPLMEGUI</DYNAME>
+           <DYNUMB>0014</DYNUMB>
+           <MSGTYP>S</MSGTYP>
+           <MSGSPRA>E</MSGSPRA>
+           <MSGID>06</MSGID>
+           <MSGNR>017</MSGNR>
+           <MSGV1>Standard PO</MSGV1>
+           <MSGV2>4500000279</MSGV2>
+           <MSGV3/>
+           <MSGV4/>
+           <ENV>CTU</ENV>
+           <FLDNAME>Standard PO created under the number 4500000279</FLDNAME>
+          </item>
+          <item>
+           <TCODE>ME21N</TCODE>
+           <DYNAME>SAPLMEGUI</DYNAME>
+           <DYNUMB>0014</DYNUMB>
+           <MSGTYP>S</MSGTYP>
+           <MSGSPRA>E</MSGSPRA>
+           <MSGID>06</MSGID>
+           <MSGNR>017</MSGNR>
+           <MSGV1>Standard PO</MSGV1>
+           <MSGV2>4500000279</MSGV2>
+           <MSGV3/>
+           <MSGV4/>
+           <ENV>CTU</ENV>
+           <FLDNAME>Standard PO created under the number 4500000279</FLDNAME>
+          </item>
+          <item>
+           <TCODE>ME21N</TCODE>
+           <DYNAME>SAPLMEGUI</DYNAME>
+           <DYNUMB>0014</DYNUMB>
+           <MSGTYP>S</MSGTYP>
+           <MSGSPRA>E</MSGSPRA>
+           <MSGID>06</MSGID>
+           <MSGNR>017</MSGNR>
+           <MSGV1>Standard PO</MSGV1>
+           <MSGV2>4500000279</MSGV2>
+           <MSGV3/>
+           <MSGV4/>
+           <ENV>CTU</ENV>
+           <FLDNAME>Standard PO created under the number 4500000279</FLDNAME>
+          </item>
+         </MSG>
+        </ddic:ETTCD>
+       </DEEP_DATA>
+      </item>
+     </ETPAR_GUIX>
+    </PARAMETERS>
+   </ECSC>
+  </VERSION>
+ </VERSIONS>
+</abapGit>

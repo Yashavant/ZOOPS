@@ -1,0 +1,1135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_ECAT" serializer_version="v1.0.0">
+ <VERSIONS>
+  <VERSION>
+   <ECSC VERSION="1.5">
+    <ATTRIBUTES>
+     <ETTOOLNAME>ECATT</ETTOOLNAME>
+     <ETOBJ_GNDT>
+      <VERSION>00000001</VERSION>
+      <TWB_TITLE>Sales Order</TWB_TITLE>
+      <SOFTCOMP/>
+      <TWB_DEP_RF/>
+      <TWB_DEP_RT/>
+      <TWB_STATUS>X</TWB_STATUS>
+      <TWB_RELE>N</TWB_RELE>
+      <FUSER></FUSER>
+      <FDATE></FDATE>
+      <LUSER></LUSER>
+      <LDATE></LDATE>
+      <LTIME></LTIME>
+      <REL_BAS_F/>
+      <REL_BAS_T/>
+      <SERVICE/>
+      <PVNR/>
+      <BACKUP/>
+     </ETOBJ_GNDT>
+     <ETOBJNOVER>
+      <NAME>ZSALES</NAME>
+      <TYPE>ECSC</TYPE>
+      <TWB_RESP></TWB_RESP>
+      <TWB_DISTL>B</TWB_DISTL>
+      <TWB_EUBOBJ/>
+      <TWB_EUTYPE/>
+      <DEVCLASS></DEVCLASS>
+      <MASTERLANG>E</MASTERLANG>
+      <TADIR_RESP></TADIR_RESP>
+      <FRANGE>BC</FRANGE>
+      <BCSET_MODE/>
+      <API_MODE/>
+      <COL_TSTOBJDATA/>
+      <NO_TRANSLATION/>
+     </ETOBJNOVER>
+     <ETOBJ_DOC>
+      <SEARCH_1/>
+      <SEARCH_2/>
+      <SEARCH_3/>
+      <SEARCH_4/>
+      <SEARCH_5/>
+      <SEARCH_6/>
+      <SEARCH_7/>
+      <SEARCH_8/>
+      <SEARCH_9/>
+      <SEARCH_10/>
+      <S_DOC_ID/>
+      <S_OBJ_ID/>
+      <S_DOC_TITL/>
+     </ETOBJ_DOC>
+     <ETOBJ_CNST>
+      <TWB_DEP_S/>
+      <TWB_DEPV_S/>
+      <TWB_DEP_L/>
+      <TWB_DEPV_L/>
+      <TWB_USE_A/>
+      <TWB_USE_P/>
+      <TWB_USE_H/>
+      <TWB_USE_E/>
+      <REUSE/>
+      <TWB_DEP_C/>
+      <TWB_DEP_VC/>
+      <TWB_DEP_F/>
+      <TWB_DEP_VF/>
+      <TWB_DEP_P/>
+      <TWB_DEP_VP/>
+      <TWB_DEP_DB/>
+      <TWB_DEPVDB/>
+      <TWB_WKREQ>0.0</TWB_WKREQ>
+      <TWB_WKUNIT>MIN</TWB_WKUNIT>
+      <TWB_PRIO>3</TWB_PRIO>
+     </ETOBJ_CNST>
+     <ETSC_TSYS>
+      <SYSTEMDATA/>
+      <TESTSYSTEM/>
+     </ETSC_TSYS>
+     <ETSYS_COMP_TABTYPE/>
+     <ETSYS_REL_TABTYPE/>
+     <ETBF_OBJ_TABTYPE/>
+     <ETBF_VER_TABTYPE/>
+     <ETSCR_SUT_MD_TT/>
+    </ATTRIBUTES>
+    <SCRIPT>
+     <ETXML_LINE_TABTYPE>
+      <item>TCD ( VA01 , VA01_1 ).</item>
+     </ETXML_LINE_TABTYPE>
+    </SCRIPT>
+    <PARAMETERS>
+     <ETPAR_GUIX>
+      <item>
+       <PNAME>VA01_1</PNAME>
+       <PTYP>X</PTYP>
+       <PDESC>Overall Structure of a Transaction</PDESC>
+       <PINDEX>0001</PINDEX>
+       <PGROUP>TCD</PGROUP>
+       <XMLREF_TYP>B</XMLREF_TYP>
+       <PSTRUC_TYP>T</PSTRUC_TYP>
+       <PREF_NAME>ETTCD</PREF_NAME>
+       <PDATLEN>0000</PDATLEN>
+       <PINTLEN>000000</PINTLEN>
+       <PDECIMALS>000000</PDECIMALS>
+       <SORT_LNR>0001</SORT_LNR>
+       <PREF_NAME2>ETTCD</PREF_NAME2>
+       <VALUE>&lt;VALUE&gt;</VALUE>
+       <VAL_TYPE>T</VAL_TYPE>
+       <TAB_INDEX>0</TAB_INDEX>
+       <DEEP_STRU>
+        <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://xml.sap.com/2003/05/eCATT/ddic" version="1.0">
+         <xsd:complexType name="ETTCD">
+          <annotation>
+           <documentation>I==O==C=S=K==D=ETTCD=A=v=L=000000=doc=Overall Structure of a Transaction</documentation>
+          </annotation>
+          <sequence>
+           <element name="TCODE" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BDC_TCODE=A=C=L=000020=doc=BDC Transaction cod</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="20"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="MODE" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=ETTCD_MODE=A=C=L=000001=doc=Replay Mode (A=Fgr</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="BINPT" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=ETTCD_BINP=A=C=L=000001=doc=Batch Input Mode (</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="WAIT" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=ETTCD_WAIT=A=N=L=000004=doc=Wait Time Factor (</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <pattern value="\d+"/>
+              <maxLength value="4"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DYNPRO" minOccurs="0" type="ETTCD_DYN_TABTYPE"/>
+           <element name="MSG" minOccurs="0" type="ETTCD_MSG_TABTYPE"/>
+          </sequence>
+         </xsd:complexType>
+         <xsd:complexType name="ETTCD_DYN_TABTYPE">
+          <annotation>
+           <documentation>I==O==C=T=K==D=ETTCD_DYN_TABTYPE=A=h=L=000000=doc=Screen Tab</documentation>
+          </annotation>
+          <sequence>
+           <element name="item" type="ETTCD_DYN" minOccurs="0" maxOccurs="unbounded"/>
+          </sequence>
+         </xsd:complexType>
+         <xsd:complexType name="ETTCD_MSG_TABTYPE">
+          <annotation>
+           <documentation>I==O==C=T=K==D=ETTCD_MSG_TABTYPE=A=h=L=000000=doc=Message Ta</documentation>
+          </annotation>
+          <sequence>
+           <element name="item" type="BDCMSGCOLL" minOccurs="0" maxOccurs="unbounded"/>
+          </sequence>
+         </xsd:complexType>
+         <xsd:complexType name="ETTCD_DYN">
+          <annotation>
+           <documentation>I==O==C=S=K==D=ETTCD_DYN=A=v=L=000000=doc=Screen Structure i</documentation>
+          </annotation>
+          <sequence>
+           <element name="MODE" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=ETDYN_MODE=A=C=L=000001=doc=Dynpro Editing Mod</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="PROG" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BDC_PROG=A=C=L=000040=doc=BDC module pool</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="40"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DYNR" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BDC_DYNR=A=N=L=000004=doc=BDC Dynpro Number</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <pattern value="\d+"/>
+              <maxLength value="4"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="FIELD" minOccurs="0" type="ETTCD_FLD_TABTYPE"/>
+          </sequence>
+         </xsd:complexType>
+         <xsd:complexType name="BDCMSGCOLL">
+          <annotation>
+           <documentation>I==O==C=S=K==D=BDCMSGCOLL=A=u=L=000000=doc=Collecting messag</documentation>
+          </annotation>
+          <sequence>
+           <element name="TCODE" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BDC_TCODE=A=C=L=000020=doc=BDC Transaction cod</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="20"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DYNAME" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BDC_MODULE=A=C=L=000040=doc=Batch input module</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="40"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="DYNUMB" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BDC_DYNNR=A=C=L=000004=doc=Batch input screen</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="4"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="MSGTYP" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BDC_MART=A=C=L=000001=doc=Batch input message</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="MSGSPRA" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BDC_SPRAS=A=C=L=000001=doc=Language ID of a me</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="MSGID" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BDC_MID=A=C=L=000020=doc=Batch input message I</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="20"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="MSGNR" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BDC_MNR=A=C=L=000003=doc=Batch input message n</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="3"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="MSGV1" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BDC_VTEXT1=A=C=L=000100=doc=Variable part of a</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="100"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="MSGV2" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BDC_VTEXT1=A=C=L=000100=doc=Variable part of a</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="100"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="MSGV3" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BDC_VTEXT1=A=C=L=000100=doc=Variable part of a</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="100"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="MSGV4" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BDC_VTEXT1=A=C=L=000100=doc=Variable part of a</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="100"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="ENV" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BDC_AKT=A=C=L=000004=doc=Batch input monitorin</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="4"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="FLDNAME" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=FNAM_____4=A=C=L=000132=doc=Field name</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="132"/>
+             </restriction>
+            </simpleType>
+           </element>
+          </sequence>
+         </xsd:complexType>
+         <xsd:complexType name="ETTCD_FLD_TABTYPE">
+          <annotation>
+           <documentation>I==O==C=T=K==D=ETTCD_FLD_TABTYPE=A=h=L=000000=doc=Field Tabl</documentation>
+          </annotation>
+          <sequence>
+           <element name="item" type="ETTCD_FLD" minOccurs="0" maxOccurs="unbounded"/>
+          </sequence>
+         </xsd:complexType>
+         <xsd:complexType name="ETTCD_FLD">
+          <annotation>
+           <documentation>I==O==C=S=K==D=ETTCD_FLD=A=u=L=000000=doc=Field Structure in</documentation>
+          </annotation>
+          <sequence>
+           <element name="MODE" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=ETFLD_MODE=A=C=L=000001=doc=Dynpro Field Mode</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="1"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="NAME" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=FNAM_____4=A=C=L=000132=doc=Field name</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="132"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="VALIN" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BDC_FVAL=A=C=L=000132=doc=BDC field value</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="132"/>
+             </restriction>
+            </simpleType>
+           </element>
+           <element name="VALOUT" minOccurs="0">
+            <annotation>
+             <documentation>I==O==C==K==D=BDC_FVAL=A=C=L=000132=doc=BDC field value</documentation>
+            </annotation>
+            <simpleType>
+             <restriction base="string">
+              <maxLength value="132"/>
+             </restriction>
+            </simpleType>
+           </element>
+          </sequence>
+         </xsd:complexType>
+        </xsd:schema>
+       </DEEP_STRU>
+       <DEEP_DATA>
+        <ddic:ETTCD xmlns:ddic="http://xml.sap.com/2003/05/eCATT/ddic">
+         <TCODE>VA01</TCODE>
+         <MODE/>
+         <BINPT/>
+         <WAIT/>
+         <DYNPRO>
+          <item>
+           <MODE>X</MODE>
+           <PROG>SAPMV45A</PROG>
+           <DYNR>0101</DYNR>
+           <FIELD>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_CURSOR</NAME>
+             <VALIN>VBAK-SPART</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_OKCODE</NAME>
+             <VALIN>=ENT2</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>RV45A-TXT_AUART</NAME>
+             <VALIN/>
+             <VALOUT>Order Type</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>VBAK-AUART</NAME>
+             <VALIN>OR</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>VBAK-VKORG</NAME>
+             <VALIN>
+              <valueRefName>ABC</valueRefName>
+             </VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>VBAK-VTWEG</NAME>
+             <VALIN>
+              <valueRefName>VTWEG</valueRefName>
+             </VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>VBAK-SPART</NAME>
+             <VALIN>
+              <valueRefName>SPART</valueRefName>
+             </VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>VBAK-VKBUR</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>VBAK-VKGRP</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+           </FIELD>
+          </item>
+          <item>
+           <MODE>X</MODE>
+           <PROG>SAPMV45A</PROG>
+           <DYNR>4001</DYNR>
+           <FIELD>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_OKCODE</NAME>
+             <VALIN>/00</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>TAXI_TABSTRIP_CAPTIONS-TAB01</NAME>
+             <VALIN/>
+             <VALOUT>Sales</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>TAXI_TABSTRIP_CAPTIONS-TAB02</NAME>
+             <VALIN/>
+             <VALOUT>Item Overview</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>TAXI_TABSTRIP_CAPTIONS-TAB03</NAME>
+             <VALIN/>
+             <VALOUT>Item detail</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>TAXI_TABSTRIP_CAPTIONS-TAB04</NAME>
+             <VALIN/>
+             <VALOUT>Ordering party</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>TAXI_TABSTRIP_CAPTIONS-TAB05</NAME>
+             <VALIN/>
+             <VALOUT>Procurement</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>TAXI_TABSTRIP_CAPTIONS-TAB06</NAME>
+             <VALIN/>
+             <VALOUT>Shipping</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>TAXI_TABSTRIP_CAPTIONS-TAB07</NAME>
+             <VALIN/>
+             <VALOUT>Reason for rejection</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPMV45A                                4021SUBSCREEN_HEADER</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>RV45A-TXT_VBELN</NAME>
+             <VALIN/>
+             <VALOUT>Standard Order</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>VBAK-VBELN</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>VBKD-BSTKD</NAME>
+             <VALIN>TEst</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>VBKD-BSTDK</NAME>
+             <VALIN>09.09.2020</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPMV45A                                4701PART-SUB</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>KUAGV-KUNNR</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>KUWEV-KUNNR</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPMV45A                                4400SUBSCREEN_BODY</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPMV45A                                4440HEADER_FRAME</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>RV45A-KETDAT</NAME>
+             <VALIN/>
+             <VALOUT>09.09.2020</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>RV45A-KPRGBZ</NAME>
+             <VALIN/>
+             <VALOUT>D</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>RV45A-DWERK</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>VBAK-AUTLF</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>VBAK-LIFSK</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>VBAK-FAKSK</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>VBKD-PRSDT</NAME>
+             <VALIN/>
+             <VALOUT>09.09.2020</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>VBKD-ZTERM</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>VBKD-INCOV</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>VBKD-INCO1</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>VBKD-INCO2_L</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>VBAK-AUGRU</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>RV45A-TXT_VTRBER</NAME>
+             <VALIN/>
+             <VALOUT>Dom. Sales Org US, Direct Sales, Product Division 00</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>VBAK-VKORG</NAME>
+             <VALIN/>
+             <VALOUT>1710</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>VBAK-VTWEG</NAME>
+             <VALIN/>
+             <VALOUT>10</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>VBAK-SPART</NAME>
+             <VALIN/>
+             <VALOUT>00</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPMV45A                                8310HEAD_USER</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLV45W                                0400SUBSCREEN_VERTRAG</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPMV45A                                4900SUBSCREEN_TC</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_CURSOR</NAME>
+             <VALIN>VBAP-KDMAT(01)</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>VBAP-KDMAT(01)</NAME>
+             <VALIN>TG12</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>RV45A-KWMENG(01)</NAME>
+             <VALIN>                  2</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPMV45A                                4050SUBSCREEN_BUTTONS</VALIN>
+             <VALOUT/>
+            </item>
+           </FIELD>
+          </item>
+          <item>
+           <MODE>X</MODE>
+           <PROG>SAPMV45A</PROG>
+           <DYNR>4001</DYNR>
+           <FIELD>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_OKCODE</NAME>
+             <VALIN>=SICH</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>TAXI_TABSTRIP_CAPTIONS-TAB01</NAME>
+             <VALIN/>
+             <VALOUT>Sales</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>TAXI_TABSTRIP_CAPTIONS-TAB02</NAME>
+             <VALIN/>
+             <VALOUT>Item Overview</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>TAXI_TABSTRIP_CAPTIONS-TAB03</NAME>
+             <VALIN/>
+             <VALOUT>Item detail</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>TAXI_TABSTRIP_CAPTIONS-TAB04</NAME>
+             <VALIN/>
+             <VALOUT>Ordering party</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>TAXI_TABSTRIP_CAPTIONS-TAB05</NAME>
+             <VALIN/>
+             <VALOUT>Procurement</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>TAXI_TABSTRIP_CAPTIONS-TAB06</NAME>
+             <VALIN/>
+             <VALOUT>Shipping</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>TAXI_TABSTRIP_CAPTIONS-TAB07</NAME>
+             <VALIN/>
+             <VALOUT>Reason for rejection</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPMV45A                                4021SUBSCREEN_HEADER</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>RV45A-TXT_VBELN</NAME>
+             <VALIN/>
+             <VALOUT>Standard Order</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>VBAK-VBELN</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>VBAK-WAERK</NAME>
+             <VALIN/>
+             <VALOUT>USD</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>VBKD-BSTKD</NAME>
+             <VALIN/>
+             <VALOUT>TEst</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>VBKD-BSTDK</NAME>
+             <VALIN/>
+             <VALOUT>09.09.2020</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPMV45A                                4701PART-SUB</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>KUAGV-KUNNR</NAME>
+             <VALIN/>
+             <VALOUT>17100001</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>KUAGV-TXTPA</NAME>
+             <VALIN/>
+             <VALOUT>Delta Electronics Inc / 200 Augusta Ave SE / Atlanta GA 30315-1402</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>KUWEV-KUNNR</NAME>
+             <VALIN/>
+             <VALOUT>17100001</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>KUWEV-TXTPA</NAME>
+             <VALIN/>
+             <VALOUT>Delta Electronics Inc / 200 Augusta Ave SE / Atlanta GA 30315-1402</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPMV45A                                4400SUBSCREEN_BODY</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPMV45A                                4440HEADER_FRAME</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>RV45A-KETDAT</NAME>
+             <VALIN/>
+             <VALOUT>09.09.2020</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>RV45A-KPRGBZ</NAME>
+             <VALIN/>
+             <VALOUT>D</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>RV45A-DWERK</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>VBAK-AUTLF</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>VBAK-LIFSK</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>VBAK-FAKSK</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>VBKD-PRSDT</NAME>
+             <VALIN/>
+             <VALOUT>09.09.2020</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>VBKD-ZTERM</NAME>
+             <VALIN/>
+             <VALOUT>0004</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>TVZBT-VTEXT</NAME>
+             <VALIN/>
+             <VALOUT>As of End of Month</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>VBKD-INCOV</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>VBKD-INCO1</NAME>
+             <VALIN/>
+             <VALOUT>EXW</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>VBKD-INCO2_L</NAME>
+             <VALIN/>
+             <VALOUT>Palo Alto</VALOUT>
+            </item>
+            <item>
+             <MODE>I</MODE>
+             <NAME>VBAK-AUGRU</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>RV45A-TXT_VTRBER</NAME>
+             <VALIN/>
+             <VALOUT>Dom. Sales Org US, Direct Sales, Product Division 00</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>VBAK-VKORG</NAME>
+             <VALIN/>
+             <VALOUT>1710</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>VBAK-VTWEG</NAME>
+             <VALIN/>
+             <VALOUT>10</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>VBAK-SPART</NAME>
+             <VALIN/>
+             <VALOUT>00</VALOUT>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPMV45A                                8310HEAD_USER</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPLV45W                                0400SUBSCREEN_VERTRAG</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPMV45A                                4900SUBSCREEN_TC</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_CURSOR</NAME>
+             <VALIN>RV45A-MABNR(02)</VALIN>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>S</MODE>
+             <NAME>BDC_SUBSCR</NAME>
+             <VALIN>SAPMV45A                                4050SUBSCREEN_BUTTONS</VALIN>
+             <VALOUT/>
+            </item>
+           </FIELD>
+          </item>
+          <item>
+           <MODE>X</MODE>
+           <PROG>SAPMSCEM</PROG>
+           <DYNR>0001</DYNR>
+           <FIELD>
+            <item>
+             <MODE>O</MODE>
+             <NAME>LAST_MSG-ID</NAME>
+             <VALIN/>
+             <VALOUT>V1</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>LAST_MSG-NUM</NAME>
+             <VALIN/>
+             <VALOUT>311</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>LAST_MSG-TEXT</NAME>
+             <VALIN/>
+             <VALOUT>&amp;1 &amp;2 has been saved.</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>LAST_MSG-VAR1</NAME>
+             <VALIN/>
+             <VALOUT>Standard Order</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>LAST_MSG-VAR2</NAME>
+             <VALIN>
+              <valueRefName>VBELN</valueRefName>
+             </VALIN>
+             <VALOUT>319</VALOUT>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>LAST_MSG-VAR3</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>LAST_MSG-VAR4</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>LAST_MSG-ID1</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>LAST_MSG-NUM1</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>LAST_MSG-ID2</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>LAST_MSG-NUM2</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>LAST_MSG-ID3</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+            <item>
+             <MODE>O</MODE>
+             <NAME>LAST_MSG-NUM3</NAME>
+             <VALIN/>
+             <VALOUT/>
+            </item>
+           </FIELD>
+          </item>
+         </DYNPRO>
+         <MSG>
+          <item>
+           <TCODE>VA01</TCODE>
+           <DYNAME>SAPMV45A</DYNAME>
+           <DYNUMB>4001</DYNUMB>
+           <MSGTYP>I</MSGTYP>
+           <MSGSPRA>E</MSGSPRA>
+           <MSGID>V1</MSGID>
+           <MSGNR>010</MSGNR>
+           <MSGV1/>
+           <MSGV2/>
+           <MSGV3/>
+           <MSGV4/>
+           <ENV>CTU</ENV>
+           <FLDNAME>It was not possible to determine the material number</FLDNAME>
+          </item>
+          <item>
+           <TCODE>VA01</TCODE>
+           <DYNAME>SAPMV45A</DYNAME>
+           <DYNUMB>4001</DYNUMB>
+           <MSGTYP>S</MSGTYP>
+           <MSGSPRA>E</MSGSPRA>
+           <MSGID>V1</MSGID>
+           <MSGNR>311</MSGNR>
+           <MSGV1>Standard Order</MSGV1>
+           <MSGV2>319</MSGV2>
+           <MSGV3/>
+           <MSGV4/>
+           <ENV>CTU</ENV>
+           <FLDNAME>Standard Order 319 has been saved.</FLDNAME>
+          </item>
+         </MSG>
+        </ddic:ETTCD>
+       </DEEP_DATA>
+      </item>
+     </ETPAR_GUIX>
+    </PARAMETERS>
+   </ECSC>
+  </VERSION>
+ </VERSIONS>
+</abapGit>
